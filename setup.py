@@ -46,7 +46,7 @@ def readme():
         return f.read()
 
 setup(name = "boto",
-      version = __version__,
+      version = "2.35.1-atlassian",
       description = "Amazon Web Services Library",
       long_description = readme(),
       author = "Mitch Garnaat",

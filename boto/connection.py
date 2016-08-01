@@ -541,7 +541,7 @@ class AWSAuthConnection(object):
             # default as recommended by
             # http://docs.aws.amazon.com/amazonswf/latest/apireference/API_PollForActivityTask.html
             self.http_connection_kwargs['timeout'] = config.getint(
-                'Boto', 'http_socket_timeout', 70)
+                'Boto', 'http_socket_timeout', 180)
 
         if isinstance(provider, Provider):
             # Allow overriding Provider
